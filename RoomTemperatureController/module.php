@@ -54,16 +54,6 @@ class RoomTemperatureController extends IPSModule
         $this->RegisterMessage($this->GetIDForIdent("CurrentTargetTemp"), 10603 /*VM_UPDATE*/);
 
 
-        // Subscribe for changes at the holiday dates
-        $startHolidayId = $this->ReadPropertyInteger("StartHoliday");
-        if ($startHolidayId != null)
-            $this->RegisterMessage($startHolidayId, 10603 /*VM_UPDATE*/);
-
-        $endHolidayId = $this->ReadPropertyInteger("EndHoliday");
-        if ($endHolidayId != null)
-            $this->RegisterMessage($endHolidayId, 10603 /*VM_UPDATE*/);
-
-
         // Set interval to 5 minutes
         $this->SetTimerInterval("HeatingStatusTimer", 1000 * 60 * 5);
 
