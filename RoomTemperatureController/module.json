@@ -1,0 +1,14 @@
+{
+  "id": "{12A66A3C-71F5-4ACA-B455-F2E4178645F0}",
+  "name": "RoomTemperatureController",
+  "type": 3,
+  "vendor": "KOSV",
+  "aliases":
+  [
+    "Raumtemperaturregler"
+  ],
+  "parentRequirements": [],
+  "childRequirements": [],
+  "implemented": [],
+  "prefix": "RTC"
+}

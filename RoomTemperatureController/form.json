@@ -1,0 +1,21 @@
+{
+  "elements":
+  [
+    { "type": "Label", "label": "Thermometer" }
+    ,{ "type": "List", "name": "Thermometer", "rowCount": 5, "add": true ,"delete": true, "sort": { "column": "Name", "direction": "ascending" },
+      "columns":
+      [
+        {"label": "Name", "name": "Name", "width": "200px", "add": "", "edit": { "type": "ValidationTextBox" } }
+        ,{"label": "ID", "name": "ID", "width": "100px", "add": "", "edit": { "type": "SelectVariable" } }
+      ]
+    }
+    ,{ "type": "Label", "label": "Heizkreise" }
+    ,{ "type": "List", "name": "HeatingValves", "rowCount": 5, "add": true ,"delete": true, "sort": { "column": "Name", "direction": "ascending" },
+      "columns":
+      [
+        {"label": "Name", "name": "Name", "width": "200px", "add": "", "edit": { "type": "ValidationTextBox" } }
+      ,{"label": "ID", "name": "ID", "width": "100px", "add": "", "edit": { "type": "SelectInstance" } }
+      ]
+    }
+  ]
+}
